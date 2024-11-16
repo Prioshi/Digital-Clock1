@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fcf40a;        
+   }.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background: #1702fa url(https://lenadesignorg.files.wordpress.com/2020/01/clock-2.png?w=344);
+    border-radius: 50%;
+    border: 20px solid #09f6f6; 
+   }
+   
+   .clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #040404;
+    border: 2px solid #030303;
+    border-radius: 50%;
+    z-index:10;
+   }
+   
+   .hour, .minutes, .seconds {
+    position: absolute;
+   }
+   
+   .hour, .hr {
+    width: 160px;
+    height: 160px;
+   }
+   
+   .minutes, .min {
+    width: 190px;
+    height: 190px;
+   }
+   
+   .seconds, .sec {
+    width: 230px;
+    height: 230px;
+   }
+   
+   .hr,.min,.sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+   }
+   
+   .hr:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #6f6a6a;
+    border-radius: 6px 6px 0 0;
+   }
+   
+   .min:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #efede7;
+    border-radius: 6px 6px 0 0;
+   }
+   
+   .sec:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: rgb(255, 4, 205);
+    border-radius: 6px 6px 0 0;
+   }
